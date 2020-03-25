@@ -1,267 +1,410 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
   <meta charset="utf-8">
+  <meta name="author" content="Dong Yuanxin" />
   
-
   
   <title>清心涟漪</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="清心涟漪">
-<meta property="og:url" content="http://articuly.github.io/index.html">
-<meta property="og:site_name" content="清心涟漪">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Articuly Lin">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="清心涟漪" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
+  
+    <meta name="keywords" content="Hexo, Theme-AD" />
+  
+
+  
+  <meta name="description" content="董沅鑫的小站">
+
+  
+
+  
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js" async></script>
+  
+
+  
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  
+
+  
+    <script src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+  
+
+  
+
+  <script>
+  // theme-ad's config script
+  // it can be used in every script
+  
+  window.AD_CONFIG = {
+    leancloud: {"appid":"Hyq9wkH495DgNHWhDQCOfQSp-gzGzoHsz","appkey":"WaR7nrzhliHj9aVwdQzkdlGd","comment":true,"count":true},
+    welcome: {"enable":false,"interval":30},
+    start_time: "2020-03-25",
+    passwords: ["efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec", ],
+    is_post: false,
+    lock: false,
+    author: "Dong Yuanxin",
+    share: {"twitter":true,"facebook":false,"weibo":true,"qq":true,"wechat":true},
+    mathjax: true,
+    page_type: "",
+    root: "/"
+  };
+</script>
+
+  
+<script src="/vendor/sha256.min.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+<script src="/vendor/qrcode.min.js"></script>
+
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/styles/components/highlight/highlight.css">
+
+
+  
 <meta name="generator" content="Hexo 4.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">清心涟漪</a>
-      </h1>
+  <body>
+    <header class="site-header">
+  <div class="site-header-brand">
+    
+      <span class="site-header-brand-title">
+        <a href="/">清心涟漪</a>
+      </span>
+    
+    
+      <span class="site-header-brand-motto"> | 活在当下</span>
+    
+  </div>
+  <div class="site-header-right">
+    <nav class="site-header-navigation">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://articuly.github.io"></form>
-      </div>
+        <a href="/" target="_self">首页</a>
+      
+        <a href="/archives/" target="_self">归档</a>
+      
+        <a href="/tags/" target="_self">标签</a>
+      
+        <a href="/categories/" target="_self">分类</a>
+      
+        <a href="/friends/" target="_self">友链</a>
+      
+        <a href="/about/" target="_self">关于</a>
+      
+    </nav>
+    <div class="site-header-btn">
+      
+        <a href="https://github.com/articuly/" target="_blank" id="site-github">
+          <i class="fa fa-github-alt"></i>
+        </a>
+      
+      <a href="javascript:void(0);" id="site-search">
+        <i class="fa fa-search"></i>
+      </a>
+      <a href="javascript:void(0);" id="site-nav-btn">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
     </div>
   </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-前端HTML、CSS、Javascript技术的学习总结" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/25/%E5%89%8D%E7%AB%AFHTML%E3%80%81CSS%E3%80%81Javascript%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" class="article-date">
-  <time datetime="2020-03-25T15:02:51.000Z" itemprop="datePublished">2020-03-25</time>
-</a>
-    
+<nav class="table-content" id="site-nav">
+  <div class="table-content-title">
+    <span>导航</span>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/25/%E5%89%8D%E7%AB%AFHTML%E3%80%81CSS%E3%80%81Javascript%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">前端HTML、CSS、Javascript技术的学习总结</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+  <div class="table-content-main">
+    <ol class="toc">
       
-        <p>学的是Python全栈，主要以写Python的代码为主，同时也要接触不同语言类的代码。其中也学习了前端的HTML、CSS、Javascript语言。目前还不算很好的经验，前面部分只能算是我的吐槽吧。</p>
-<p>这几天做前端的练习作业差点做得吐出血来，至少我已经捶过桌子，经常有想砸键盘的感觉，做完最后一题，已经比较焦虑，心里骂前端技术：真是丧心病狂。学习工科知识和编程技术最强调的是反馈。在《刻意练习》中提到到3F：专注、反馈和调整。其中，反馈就是指学习、练习该知识能得到及时、准备的反馈。在我看来HTML和CSS的反馈比较差，学完或做过多作业，根本不确定哪些是有效的、哪些是最好的。因为兼容性，HTML、CSS不能像其它语言一出错就运行不了，那可以像Javascript有个后台，显示有错误和异常。例如，我写图片img标签地址时，多了个/，就找不到图片，至少在后台也输出这些异常好让学前端的人排查。</p>
-<p>这也里也总结我查了很久才知道的错误：</p>
-<p>在写transform, transition, animation有关动画的样式时，冒号、语句、分号之间一定要空好英文半格。</p>
-<p>class选择器可多写，可指向同类的地方，而id选择器具有唯一性，只能指向单个地方，注意区分。</p>
-<p>写在标签里的内联样式，注意之间的空格、分号、引号，如果没有到很熟练的地步，就写一个预览一个，因为目前还比较难判断会因为什么而没生效，习惯有自动完成的IDE也很容易忽略一些格式，而导致样式不生效。</p>
-<p>写在内部的样式，换行写样式时，容易最后忘了加分号，也会导致样式失效。</p>
-<p>有时，细调一些样式，不一定能肉眼看出区别和变化，可以写把样式值写大点，如果看到效就改小再微调。在浏览器开发者工具样式栏那里直接修改样式和样式值是个好方法。</p>
-<p>制作前端网页一定要布局好，各种标签元素有些是行内排列，有些是块排列，这是用div和span先装好这些元素，定位、对齐、大小调整好，再细化各种文字、图片的排版，最后才设置动画、变形的样式。</p>
-<p>另外说一下，XML这种存储数据的像HTML的语言，而JSON像Python的字典加列表。前者都是有对称的标签，如果是嵌套的，那更加难读。而Python通过缩进来表达嵌套的结构，总体看就像是二维的，每个缩进都是有意义。而HTML、XML都可压缩可一行文本，缩进没有很大的语法意义，其表达是线性的。Javascript好一些换行有作用，如果不换行写函数就一定要加分号。</p>
-<p>现在幸好有jQuery、Bootstrap等工具和框架，我觉得拯救很多全栈工程师或被迫写前端网页的后端工程师，就像搭积木那样方便，能通过简单的样式类把模式调整好，不用那么费神，同时大大增加了网页的兼容性。不然，如果某人随便提了个需求或伪需求，那做辛苦在MVC框架做完种CURD，然后就要面对头痛的前端，还考考虑不同设备、不同屏幕、不同浏览器的兼容问题，那这个过程实在太痛苦了。</p>
-<p>最后，说一下Javascript，一开始我是拒绝的，因为它没Python的一些优点，尤其是在学操作符运算和面向对象时，没有Python那种简洁、优雅的感觉，很多变化。作为，Python全栈工程师还是要将Javascript当作第二语言来学。学到JS的面向对象、BOM、DOM的时候，觉得有点。现在有点理解，刚学习Python时，把基础的数据类型作为输入，输出也是这些数据类型，操作的是控制台的输出和文件读写。而学到数据分析模块时，输入的数据文件、扩展的数据类型、Excel、JSON等种文件，输出的是各种数据类型和图表，这里操作的对象是数据文件、可读性高的图片和文件或是基础算法。那么JS输入的也是基础数据类型，没有比Python多，输出在控制台、网页、网页的部分标签上，操作的对象是浏览器的信息、网页文件和各输入到浏览器中的键盘、鼠标事件。只是目前，对BOM、DOM（包括事件）没有Python的一些对象那么熟悉。面向对象的思维还是一样的。</p>
-<p>Jquery的代码一定要要网页尾部作为第为第一个JS文件来加载，其它很多JS插件都会依赖Jquery的代码，如果不第一个加载载，后面的JS代码很容易失效。</p>
-<p>Javascript的有错误也很难看出来，那就多通过console.log()把过程的变量或函数打印出来，帮助判断。</p>
-<p>走过前端的坑，可能后面还会踩一些坑的，只希望我们都不踩那么深。</p>
-
+        <li class="toc-item">
+          <a href="/" target="_self">
+            首页
+          </a>
+        </li>
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://articuly.github.io/2020/03/25/%E5%89%8D%E7%AB%AFHTML%E3%80%81CSS%E3%80%81Javascript%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" data-id="ck87gmv8j0000wkuh48y08phl" class="article-share-link">Share</a>
+        <li class="toc-item">
+          <a href="/archives/" target="_self">
+            归档
+          </a>
+        </li>
       
+        <li class="toc-item">
+          <a href="/tags/" target="_self">
+            标签
+          </a>
+        </li>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
-
-    </footer>
+        <li class="toc-item">
+          <a href="/categories/" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/friends/" target="_self">
+            友链
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/about/" target="_self">
+            关于
+          </a>
+        </li>
+      
+    </ol>
   </div>
+</nav>
+<div id="site-process"></div>
+    <main>
+      <div class="home">
   
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/25/hello-world/" class="article-date">
-  <time datetime="2020-03-25T14:33:45.615Z" itemprop="datePublished">2020-03-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://articuly.github.io/2020/03/25/hello-world/" data-id="ck87fikr60000nwuh50ajdisz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/03/25/%E5%89%8D%E7%AB%AFHTML%E3%80%81CSS%E3%80%81Javascript%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">前端HTML、CSS、Javascript技术的学习总结</a>
-          </li>
-        
-          <li>
-            <a href="/2020/03/25/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2020-03-25
+            </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/passages/%E5%89%8D%E7%AB%AFHTML%E3%80%81CSS%E3%80%81Javascript%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">前端HTML、CSS、Javascript技术的学习总结</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              学的是Python全栈，主要以写Python的代码为主，同时也要接触不同语言类的代码。其中也学习了前端的HTML、CSS、Javascript语言。目前还不算很好的经验，前面部分只能算是我的吐槽吧。
+            
+          </div>
+          <a class="home-article-read" href="/passages/%E5%89%8D%E7%AB%AFHTML%E3%80%81CSS%E3%80%81Javascript%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">
+            READ MORE >>>
+          </a>
+          
+            <div class="passage-tags">
+             
+              <a href="/tags/Javascript/"><i class="fa fa-tags"></i>Javascript</a>
+             
+              <a href="/tags/HTML/"><i class="fa fa-tags"></i>HTML</a>
+             
+              <a href="/tags/CSS/"><i class="fa fa-tags"></i>CSS</a>
+            
+            </div>
+          
+        </div>
         
       </div>
-      <footer id="footer">
+    </div>
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 Articuly Lin<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2020-03-25
+            </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/passages/hello-world/">Hello World</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              Welcome to Hexo! This is your very first post.
+            
+          </div>
+          <a class="home-article-read" href="/passages/hello-world/">
+            READ MORE >>>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+</div>
+    </main>
+    
+    <div class="site-footer-wrapper">
+  <footer class="site-footer">
+    
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">博客推荐</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://godbmw.com/" target="_blank">GodBMW</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="http://ruanyifeng.com/" target="_blank">阮一峰的个人网站</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">系列教程</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://godbmw.com/categories/webpack4%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/" target="_blank">webpack4系列教程</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://godbmw.com/design-patterns/" target="_blank">设计模式手册</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">抓到我</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5" target="_blank">掘金</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://segmentfault.com/" target="_blank">思否</a>
+            </span>
+          
+        </div>
+      
+    
+    <div class="site-footer-info">
+      <i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span>
+    </div>
+    
+      <div class="site-footer-info">
+        <i class="fa fa-paw"></i> 您是本站第 <span id="site-count"></span> 位访客
+      </div>
+    
+    
+      <div class="site-footer-info">
+        <i class="fa fa-at"></i> Email: articuly@gmail.com
+      </div>
+    
+    <div class="site-footer-info">
+      <i class="fa fa-copyright"></i> 
+      2019 <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>.
+      Created by <a href="https://godbmw.com/" target="_blank">GodBMW</a>.
+      All rights reserved.
+    </div>
+  </footer>
+</div>
+    <div id="site-layer" style="display:none;">
+  <div class="site-layer-content">
+    <div class="site-layer-header">
+      <span class="site-layer-header-title" id="site-layer-title"></span>
+      <i class="fa fa-close" id="site-layer-close"></i>
+    </div>
+    <div class="site-layer-body" id="site-layer-container">
+      <div class="site-layer-input" id="site-layer-search" style="display: none;">
+        <div class="site-layer-input-choose">
+          <a href="javascript:void(0);" title="Change Search Engine">Google</a>
+        </div>
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      
+        <div class="site-layer-reward" id="site-layer-reward" style="display: none;">
+          
+            <div>
+              <img src="/images/wechat.png" alt="WeChat">
+              
+                <p>WeChat</p>
+              
+            </div>
+          
+            <div>
+              <img src="/images/alipay.png" alt="AliPay">
+              
+                <p>AliPay</p>
+              
+            </div>
+          
+        </div>
+      
+      <div id="site-layer-welcome" style="display:none;"></div>
     </div>
   </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
+<div class="bottom-bar">
+  <div class="bottom-bar-left">
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-right"></i>
+    </a>
   </div>
-</body>
+  <div class="bottom-bar-right">
+    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+      <a href="javascript:void(0);" data-enable="false">
+        <i class="fa fa-commenting"></i>
+      </a>
+    
+    <a href="javascript:void(0);" id="site-toggle-share-btn">
+      <i class="fa fa-share-alt"></i>
+    </a>
+    
+      <a href="javascript:void(0);" id="site-reward">
+        <i class="fa fa-thumbs-up"></i>
+      </a>
+    
+    <a href="javascript:void(0);" id="back-top-btn">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+</div>
+    <div id="share-btn">
+  
+    <a id="share-btn-twitter" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+  
+  
+  
+    <a id="share-btn-weibo" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-weibo"></i>
+    </a>
+  
+  
+    <a id="share-btn-qq" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-qq"></i>
+    </a>
+  
+  
+    <a id="share-btn-wechat" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-wechat"></i>
+    </a>
+  
+</div>
+    
+
+
+
+
+
+    
+  </body>
 </html>
